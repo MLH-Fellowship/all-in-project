@@ -1,0 +1,13 @@
+---
+layout: page
+title: Posts
+permalink: /posts
+---
+
+Here are the items from the website!
+
+{% for item in site.data.posts %}
+    <ul>
+        <li>{{ item.title }}</li>
+    </ul>
+{% endfor %}
