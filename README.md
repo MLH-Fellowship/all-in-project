@@ -29,3 +29,5 @@ Jekyll has a load of documentation to help get folks started: [https://jekyllrb.
 
 
 Jekyll uses liquid to help you build templates. Read more here: [https://jekyllrb.com/docs/liquid/](https://jekyllrb.com/docs/liquid/) 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/570431bf-2785-44c8-b674-9edff6c966b4/deploy-status)](https://app.netlify.com/sites/adrian-blog-project/deploys)
