@@ -34,8 +34,6 @@ plugins:
 sass:
   sass_dir: _sass
 
-#add new theme
-theme: jekyll-theme-minimal
 
 # Exclude from processing.
 # The following items will not be processed, by default.
