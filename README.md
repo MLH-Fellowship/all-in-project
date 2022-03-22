@@ -22,6 +22,7 @@ This repository is using Jekyll. You'll use this to allow you to build a HTML we
 When you create a task, you should add it as an **Issue** in your repository and assign yourself to it. Every task should be worked on inside of its own branch and a Pull Request should be submitted when it's ready for review by the rest of your group and Pod Leader.
 
 ## Resources
+manya.agarwal@majorleaguehacking.com
 
 Jekyll may be new to a load of you and that's super exciting!
 
