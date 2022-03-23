@@ -11,6 +11,13 @@ permalink: /contact
   <title>Contact Page</title>
   <link rel="stysheet" href="stylesheet.css">
   </head>
+<body id="bdy">
+  <script>
+  function darkMode(){
+    document.getElementById("bdy").style.backgroundColor="black";
+    document.getElementById("bdy").style.color="white"
+  }
+  </script>
 
   <h1>We would Love To Connect, Give Us A Shout</h1>
   <div>
@@ -18,4 +25,16 @@ permalink: /contact
       </div>
       <div>
         <form>
-          
+          <label for="fname">First Name:</label> <br>
+          <input type="text" name="fname" value="">
+          <br>
+          <label for="sname">Surname:</label><br>
+          <input type="text" name="sname" value="">
+          <br>
+          <label for="email">Email:</label><br>
+          <input type="text" name="email" value="">
+          <br>
+          <label for="message">Brief Message:</label><br>
+          <input type="text" name="message" value="">
+        </form>
+      </div>
