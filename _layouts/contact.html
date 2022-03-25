@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+
+	<!-- Fonts -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;600&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	</style>
+</head>
+<body>
+	<div id="contact-form">
+		<center><h1>Contact Me</h1></center>
+		<form name="contact" method="POST">
+			<p><input id="name" type="text" placeholder="NAME*"/></p>
+			<p><input id="email" type="text" placeholder="EMAIL ADDRESS*"/></p>
+			<p><input id="subject" type="text" placeholder="SUBJECT"/></p>
+			<textarea id="message" placeholder="MESSAGE" rows="30" cols="150"></textarea>
+			<br />
+			<button type="submit" onclick="sendEmail();">Send Message</button>
+		</form>
+	</div>
+</body>
