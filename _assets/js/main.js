@@ -4,5 +4,5 @@ function sendEmail() {
 	const messageContent = document.getElementById('message').value;
 
 	openMailerAlert();
-	window.open('mailto:kdefarrar@gmail.com?subject=' + messageSubject + '&body=' + messageContent);
+	window.open('mailto:kdefarrar@gmail.com?subject=' + messageSubject + '&body=' + messageContent); //Replace email later
 }

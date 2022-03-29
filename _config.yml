@@ -23,9 +23,9 @@ email: contact@blog.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is our awesome blog!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: https://github.com/kdfarrar/all-in-project # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
 
 # Build settings
 plugins:
@@ -55,4 +55,5 @@ sass:
 #   - vendor/ruby/
 
 include:
+     - _assets
      - _layouts
