@@ -1,3 +1,7 @@
+function openMailerAlert() {
+	alert("Submitting this form will open your default E-mail application.");
+}
+
 button.addEventListener("click", sendEmail);
 function sendEmail() {
 	const messageSubject = document.getElementById('subject').value;
