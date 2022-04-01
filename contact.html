@@ -1,9 +1,85 @@
----
-layout: page
-title: Contact US
-permalink: /contact
----
 
-Drop us a message below!
 
-<!-- Write a contact form here -->
+<!doctype HTML>
+<HTML>
+  <head>
+    <meta charset="UTF-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="stysheet" href="contactstylesheet.css">
+  <style>
+    h1,h2,h3 {
+      color:purple;
+
+    }
+
+
+    div{
+        justify-content: center;
+        padding-left:25%;
+
+
+    }
+    input.text {
+                color: red;
+    }
+
+    body {padding-left:30%;
+    padding-right:10%
+    padding-botton:10%;
+    padding-top:10%;
+    background-color:pink;}
+    #width { width: 200px;
+    height:300px;}
+    </style>
+  </head>
+<body id="bdy">
+  <script>
+  function darkMode(){
+    document.getElementById("bdy").style.backgroundColor="black";
+    document.getElementById("bdy").style.color="white";
+  }
+  function writefile(passForm){
+    set fso = CreateObject("Scripting.FileSystemObject");
+    set s   = fso.CreateTextFile("<details.txt", True);
+
+    let firstname=document.getElementByname('fname');
+    let Surnam=document.getElementByname('sname');
+    let emel=document.getElementByname('email');
+    let mssage=document.getelementByname('message');
+    s.writeline=("First Name: " +firstname);
+    s.writeline=("Last Name: " +Surnam);
+    s.writeline=("Email: "+emel);
+    s.writefile=("Message:"+mssage);
+
+    s.writeline("-----------------------------");
+   s.Close();
+}
+
+  </script>
+
+  <h1>We would Love To Connect, Give Us A Shout</h1>
+
+    <h3>Use The Form Below To Email Us, or Do It The Modern Way Via Social Media Here:<br> <a href=""> Bernard</a>, <a href="">Kris</a>, <a href="">Chris</a>.
+
+      <div>
+        <form onsubmit="writefile(thish)" id="bdy">
+          <label for="fname">First Name:</label> <br>
+          <input type="text" name="fname" value="">
+          <br>
+          <label for="sname">Surname:</label><br>
+          <input type="text" name="sname" value="">
+          <br>
+          <label for="email">Email:</label><br>
+          <input type="text" name="email" value="">
+          <br>
+          <label for="message">Brief Message:</label><br>
+          <input type="text" id="width" name="message" value="">
+        </form>
+
+      <button type="button" name="button">Submit</button>
+      <br>
+      <br>
+    <button type="button" onclick="darkMode()"> DarkMode </button>
+    </div>
+    </body>
+    </HTML>

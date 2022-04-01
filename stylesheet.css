@@ -1,0 +1,11 @@
+body {padding-left: 50%;
+      padding-right: 50%;
+      background-color: white;
+      color: black;
+}
+input {align-items: center;
+       background-color: blue;
+       }
+form {display: inline-block;
+      text-align: center;
+      }
