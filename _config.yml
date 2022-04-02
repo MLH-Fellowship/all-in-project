@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My awesome blog!
+title: All In Project
 email: contact@blog.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is our awesome blog!
@@ -31,8 +31,8 @@ url: https://github.com/kdfarrar/all-in-project # the base hostname & protocol f
 plugins:
   - jekyll-feed
 
-sass:
-  sass_dir: _sass
+#sass:
+#  sass_dir: _sass
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,7 +42,9 @@ sass:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+     - _sass
+     - _data
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

@@ -1,7 +1,53 @@
+body {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar ul {
+	list-style-type: none;
+	border-left: 15px solid #B78AFF;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+	overflow: hidden;
+	background-color: #000000;
+	width: 100%;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	padding: 17px 30px 14px 30px;
+	margin-left: 30px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	color: #E8EDDF;
+	background-color: #000000;
+}
+
+.navbar li a:hover {
+	color: #B78AFF;
+	border-bottom: solid 3px #B78AFF;
+}
+
+.navbar .active {
+	color: #B78AFF;
+	border-bottom: solid 3px #B78AFF;
+}
+
 #contact-form {
 	display: inline-block;
 	padding: 0px 30px 0px 30px;
-	margin: 20px 50% 20px 15%;
+	margin: 75px 50% 20px 15%;
 	background-color: #EDEDEF;
 	border-top: 30px solid #000000;
 	border-radius: 3px;
