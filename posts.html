@@ -6,8 +6,9 @@ permalink: /posts
 
 Here are the items from the website!
 
-{% for item in site.data.posts %}
+{% for item in site.posts %}
     <ul>
-        <li>{{ item.title }}</li>
+        <li><a href="{{ item.url }}">{{ item.title }}</a> - {{item.author}}</li>
+        
     </ul>
 {% endfor %}
