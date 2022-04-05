@@ -6,5 +6,32 @@ layout: default
     Bernard, Chris, and Kris' blog!
 </h1>
 <p><b>Hello everbody!</b> this is a blog where we share with you our coding journey through the Major League Hacking All In Program!</p>
-
+<div class="container">
+    <img class="item" src="https://picsum.photos/300" alt="Example image">
+    <img class="item" src="https://picsum.photos/300" alt="Example image">
+    <img class="item" src="https://picsum.photos/300" alt="Example image">    
+ </div>
+<!--
+<article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {% for post in site.posts %}
+      <h2 class="post-title">{{ post.title }}</h2>
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+      {% else %}
+      <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+      {% endif %}
+    </a>
+    <p class="post-meta">Posted by
+      {% if post.author %}
+      {{ post.author }}
+      {% else %}
+      {{ site.author }}
+      {% endif %}
+      on
+      {{ post.date | date: '%B %d, %Y' }}      
+      {% endfor %}       
+    </p>
+  </article>
+  -->
 {{ content }}
