@@ -166,10 +166,6 @@
 	transform: translateX(-100px);
 }  
 /* CSS for about page*/
-* {
-	box-sizing: border-box;
-  }
-  
   .column {
 	float: left;
 	width: 33.33%;
@@ -182,7 +178,7 @@
 	clear: both;
 	display: table;
   }
-			  #borderimg1 { 
+  #borderimg1 { 
   border: 10px solid transparent;
   padding: 15px;
   border-image: url(border.png) 30 round;
@@ -195,9 +191,7 @@
   }
 
 /*CSS for blog posts page*/
-* {
-    box-sizing: border-box;
-}
+
 
 .column {
   float: left;
