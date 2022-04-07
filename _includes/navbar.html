@@ -1,8 +1,8 @@
 <div id="navbar">
 	<ul>
-		<li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-		<li><a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>About</a></li>
-		<li><a href="/contact" {% if page.url == "/contact" %}class="active"{% endif %}>Contact</a></li>
-		<li><a href="/posts" {% if page.url == "/posts" %}class="active"{% endif %}>Posts</a></li>
+		<li><a href="/" {% if page.url == "/" %} class="active" {% endif %}>Home</a></li>
+		<li><a href="/about" {% if page.url == "/about" %} class="active" {% endif %}>About</a></li>
+		<li><a href="/contact" {% if page.url == "/contact" %} class="active" {% endif %}>Contact</a></li>
+		<li><a href="/posts" {% if page.url == "/posts" or page.url contains "/posts/" %} class="active" {% endif %}>Posts</a></li>
 	</ul>
 </div>
