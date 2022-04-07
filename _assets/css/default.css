@@ -6,7 +6,7 @@ a {
 	text-decoration: none;
 }
 
-.navbar ul {
+#navbar ul {
 	list-style-type: none;
 	border-left: 15px solid #B78AFF;
 	margin: 0px;
@@ -17,11 +17,11 @@ a {
 	width: 100%;
 }
 
-.navbar li {
+#navbar li {
 	float: left;
 }
 
-.navbar li a {
+#navbar li a {
 	display: block;
 	padding: 17px 30px 14px 30px;
 	margin-left: 30px;
@@ -34,12 +34,12 @@ a {
 	background-color: #000000;
 }
 
-.navbar li a:hover {
+#navbar li a:hover {
 	color: #B78AFF;
 	border-bottom: solid 3px #B78AFF;
 }
 
-.navbar .active {
+#navbar .active {
 	color: #B78AFF;
 	border-bottom: solid 3px #B78AFF;
 }
