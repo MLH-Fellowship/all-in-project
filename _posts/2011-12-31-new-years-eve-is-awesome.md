@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "New Year's Eve is Awesome!"
+author: Henry Jackson
 ---
 
 # Welcome

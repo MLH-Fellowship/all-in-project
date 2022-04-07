@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Zero Test Post"
+author: Kayla Farrar
 ---
 
 # Welcome

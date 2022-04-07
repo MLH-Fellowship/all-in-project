@@ -6,22 +6,21 @@ a {
 	text-decoration: none;
 }
 
-#navbar ul {
+nav ul {
 	list-style-type: none;
 	border-left: 15px solid #B78AFF;
 	margin: 0px;
 	padding: 0px;
-	position: fixed;
 	overflow: hidden;
 	background-color: #000000;
 	width: 100%;
 }
 
-#navbar li {
+nav li {
 	float: left;
 }
 
-#navbar li a {
+nav li a {
 	display: block;
 	padding: 17px 30px 14px 30px;
 	margin-left: 30px;
@@ -34,14 +33,18 @@ a {
 	background-color: #000000;
 }
 
-#navbar li a:hover {
+nav li a:hover {
 	color: #B78AFF;
 	border-bottom: solid 3px #B78AFF;
 }
 
-#navbar .active {
+nav .active {
 	color: #B78AFF;
 	border-bottom: solid 3px #B78AFF;
+}
+
+.content {
+	padding-left: 50px;
 }
 
 #contact-form {
@@ -101,4 +104,13 @@ a {
 
 #contact-form button:hover {
 	color: #B78AFF;
+}
+
+.favorite-button {
+	margin: 100px 0px 0px 50px;
+	border: 1px solid #000000;
+}
+
+.favorite .favorite-button{
+	border: 1px solid red;
 }

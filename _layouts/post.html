@@ -1,3 +1,8 @@
 ---
 layout: page
 ---
+{% include favorite-button.html %}
+<script>
+	var postInfo = ["{{ page.title | json }}", "{{ page.author | json }}", "{{ page.date | json }}", "{{ page.url | json }}"];
+</script>
+<div id="favorite-post"></div>

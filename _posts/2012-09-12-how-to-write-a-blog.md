@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to Write A Blog"
+author: Jane Doe
 ---
 
 # Welcome
