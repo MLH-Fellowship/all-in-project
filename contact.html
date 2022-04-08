@@ -1,14 +1,5 @@
----
-layout: page
-title: Contact US
-permalink: /contact
----
 
-Drop us a message below!
 
-<!-- Write a contact form here -->
-
-<!--
 <!doctype HTML>
 <HTML>
   <head>
@@ -18,15 +9,12 @@ Drop us a message below!
   <style>
     h1,h2,h3 {
       color:purple;
-
     }
 
 
     div{
         justify-content: center;
         padding-left:25%;
-
-
     }
     input.text {
                 color: red;
@@ -42,14 +30,15 @@ Drop us a message below!
     </style>
   </head>
 
-<body id="bdy">
+<body id="DarkModetext">
 
   <script>
-  function darkMode(){
-    document.getElementById("bdy").style.backgroundColor="black";
-    document.getElementById("bdy").style.color="white";
-  }
-  function writefile(passForm){
+    function darkMode() {
+        document.getElementById('DarkModetext').style.backgroundColor="black";
+        document.getElementById('DarkModetext').style.color="white";
+        document.getElementById('DarkModetext').style.color="white";
+      }
+  function writefile(){
     set fso = CreateObject("Scripting.FileSystemObject");
     set s   = fso.CreateTextFile("<details.txt", True);
 
@@ -67,13 +56,13 @@ Drop us a message below!
 }
 
   </script>
-  -->
+
   <h1>We would Love To Connect, Give Us A Shout</h1>
 
-    <h3>Use The Form Below To Email Us, or Do It The Modern Way Via Social Media Here:<br> <a href=""> Bernard</a>, <a href="">Kris</a>, <a href="">Chris</a>.
+    <h3>Use The Form Below To Email Us, or Do It The Modern Way Via Social Media Here:<br> <a href="https://www.instagram.com/bern_e.z/"> Bernard</a>, <a href="">Kris</a>, <a href="">Chris</a>.
 
       <div>
-        <form onsubmit="writefile(thish)" id="bdy">
+        <form onsubmit="writefile(this)" id="bdy">
           <label for="fname">First Name:</label> <br>
           <input type="text" name="fname" value="">
           <br>
@@ -87,12 +76,11 @@ Drop us a message below!
           <input type="text" id="width" name="message" value="">
         </form>
 
-      <button type="button" name="button">Submit</button>
+      <button type="button" name="button" onclick="writefile()">Submit</button>
       <br>
       <br>
     <button type="button" onclick="darkMode()"> DarkMode </button>
     </div>
-    <!--
+
     </body>
     </HTML>
-    -->
