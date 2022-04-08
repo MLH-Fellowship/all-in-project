@@ -34,3 +34,15 @@ body {
 .content {
     margin: 10px;
 }
+.post-meta{
+    font-size: smaller;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+}
+.item {
+    margin: 5px;
+}
