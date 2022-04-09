@@ -1,16 +1,9 @@
 ---
 layout: default
 ---
-<button id="likeBtn" onclick="likeFunction">Like</button>
+<button id="likeBtn" onclick="likeFunction()">Like</button>
 {{ content }}
-{% for posts in site.posts %}
 <p class="post-meta">Posted by
-    {% if posts.author %}
-    {{ posts.author }}
-    {% else %}
-    {{ site.author }}
-    {% endif %}
-    on
-    {{ posts.date | date: '%B %d, %Y' }}      
-  </p>
-{% endfor %}
+  {{page.author}}
+  on
+  {{ page.date | date: '%B %d, %Y' }} 

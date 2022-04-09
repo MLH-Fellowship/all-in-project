@@ -1,0 +1,12 @@
+---
+layout: page
+title: Posts by Kris
+---
+{% for post in site.posts %}
+    {% if post.author == "Kris Mannino" %}
+    <ul>
+        <li><a href="{{ post.url }}">{{ post.title }}</a> - {{post.author}}</li>
+        
+    </ul>
+    {% endif %}
+{% endfor %}

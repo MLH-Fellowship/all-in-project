@@ -1,0 +1,12 @@
+---
+layout: page
+title: Posts by Bernard
+---
+{% for post in site.posts %}
+    {% if post.author == "Bernard Zandonda" %}
+    <ul>
+        <li><a href="{{ post.url }}">{{ post.title }}</a> - {{post.author}}</li>
+        
+    </ul>
+    {% endif %}
+{% endfor %}
