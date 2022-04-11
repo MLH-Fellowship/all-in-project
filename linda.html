@@ -31,9 +31,18 @@ permalink: /posts
   it is always good to follow your dreams no matter what.
      </p>
      <p>Linda Sylvie</p>
+     <p><span id="time"></span> minute read</p>
   
     </div>
-</div>    
+</div>   
+<script>function readingTime() {
+    const text = document.getElementById("article").innerText;
+    const wpm = 225;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById("time").innerText = time;
+  }
+  readingTime();</script>  
 </body>    
         
  </html>
