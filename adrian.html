@@ -1,0 +1,40 @@
+---
+layout: page
+title: Posts
+permalink: /posts
+---
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to my first blog post!</title>
+</head>
+<body>
+
+  <h2 style="color:darkgoldenrod"><I> Welcome to my first blog post!</I></h2>
+
+<div class="row">
+  <article id="article">
+  <div class="column left" >
+    <h2>Why I Chose Computer Science</h2>
+    <p>I decided to major in Computer Science shortly after my separation from the United States Air Force after nine years of honorable service.  
+      I wasn't sure about attending college due to the fact I did not really know what I would major in.  The first thing I did was try and remember
+       what classes I was good at and then things I was good at naturally growing up.  What I realized was that I excelled in Math, History, and English.  
+       Also, I was always interested in how things work/operate, and I was very analyitcal as well and good at putting two and two together.  
+       That is when becoming a Computer Scientist entered my mind and I made the decision that this is what I'd major in.</p>
+
+     <p>Adrian Whitehurst</p>
+     <p><span id="time"></span> minute read</p>
+  </div>
+  </article>
+
+<script>function readingTime() {
+  const text = document.getElementById("article").innerText;
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  const time = Math.ceil(words / wpm);
+  document.getElementById("time").innerText = time;
+}
+readingTime();</script> 
+</body> 
+</html>
