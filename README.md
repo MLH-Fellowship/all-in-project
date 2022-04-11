@@ -5,11 +5,11 @@ For the last half of the program, you'll work in groups of 2 or 3 on a new proje
 ## Task
 
 You're going to be building a blog for yourself to share your experiences on your programming journey! The website needs a few things to make it functional:
-- [ ] A list of blog posts to read
+- [x] A list of blog posts to read
 - [ ] Page for each blog post
-- [ ] Contact form
+- [x] Contact form
 - [ ] A way to favorite posts and come back to them 
-- [ ] Calculating the length of each post in time to read.
+- [x] Calculating the length of each post in time to read.
 
 You should aim to achieve the above tasks by the end of the program. You should break them into smaller sub tasks and work as a team to build this blog!
 
