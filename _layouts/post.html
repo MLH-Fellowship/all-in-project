@@ -6,3 +6,9 @@ layout: page
 	var postInfo = ["{{ page.title | json }}", "{{ page.author | json }}", "{{ page.date | json }}", "{{ page.url | json }}"];
 </script>
 <div id="favorite-post"></div>
+	{% assign read_time = page.content | number_of_words | divided_by: 200 %}
+	{% if read_time > 0 %}
+		<p>{{ read_time }} minute read</p>
+	{% endif %}
+
+{{ content }}
