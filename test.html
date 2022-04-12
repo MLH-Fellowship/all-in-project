@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Access Array Values</h2>
+<li id="favoriteOne"></li>
+<li id="favoriteTwo"></li>
+<li id="favoriteThree"></li>
+<p id="fetchedFavArray"></p>
+<p id="fetchedFavSet"></p>
+
+
+<script>
+
+// Create three example favorites.
+const artOne = JSON.parse('{"title":"ArtOne","date":"2022-03-04","author":"John Q Public","url":"http://mysite.com/view/artone.html"}');
+const artTwo = JSON.parse('{"title":"ArtTwo","date":"2022-04-05","author":"Jane T Spice","url":"http://mysite.com/view/artTwo.html"}');
+const artThree = JSON.parse('{"title":"ArtThree","date":"2022-05-06","author":"Alice B House","url":"http://mysite.com/view/artThree.html"}');
+
+// Array for storing favorites.
+const myFav = [];
+
+// Set for storing favorites.
+const mySet = new Set();
+
+// Add example favorites to array.
+myFav.push(artOne);
+myFav.push(artTwo);
+myFav.push(artThree);
+
+// Add example favorites to set.
+mySet.add(artOne);
+mySet.add(artTwo);
+mySet.add(artThree);
+
+// Store array in local storage.
+localStorage.removeItem("favStored");
+localStorage.setItem("favStored", JSON.stringify(myFav));
+
+// Store set in local storage.  Note, convert set to array first.
+localStorage.removeItem("favStoredSet");
+localStorage.setItem("favStoredSet", JSON.stringify(Array.from(mySet)));
+
+// Fetch the contents of the stored favorites array and place into a new array.
+const fetchedFav = JSON.parse(localStorage.getItem("favStored"));
+
+// Fetch the contents of the stored favorites set and place into a new set.
+// Note, convert into an array first and then create a new set from array.
+const fetchedFavSet = new Set(JSON.parse(localStorage.getItem("favStoredSet")));
+
+// Display the titles of the example favories that were fetched from
+// local storage and placed into new array.
+document.getElementById("favoriteOne").innerHTML = fetchedFav[0].title;
+document.getElementById("favoriteTwo").innerHTML = fetchedFav[1].title;
+document.getElementById("favoriteThree").innerHTML = fetchedFav[2].title;
+
+// Display the complete contents of the fetched favorite array as a string.
+document.getElementById("fetchedFavArray").innerHTML = JSON.stringify(fetchedFav);
+
+// Display the complete contents of the fetched favorite set as a string.
+// Note, convert from a set to an array first and then to a string.
+document.getElementById("fetchedFavSet").innerHTML = JSON.stringify(Array.from(fetchedFavSet));
+
+
+</script>
+
+</body>
+</html>
