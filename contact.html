@@ -1,12 +1,11 @@
+---
+layout: default
+title: Contact Page
+---
 
-
-<!doctype HTML>
-<HTML>
   <head>
-    <meta charset="UTF-8" name="viewport" content= "width=device-width, initial-scale=1.0">
-  <title>Contact Page</title>
   <link rel="stysheet" href="contactstylesheet.css">
-  <style>
+  <!--<style>
     h1,h2,h3 {
       color:purple;
     }
@@ -27,35 +26,9 @@
     background-color:pink;}
     #width { width: 200px;
     height:300px;}
-    </style>
+    </style> -->
   </head>
-
 <body id="DarkModetext">
-
-  <script>
-    function darkMode() {
-        document.getElementById('DarkModetext').style.backgroundColor="black";
-        document.getElementById('DarkModetext').style.color="white";
-        document.getElementById('DarkModetext').style.color="white";
-      }
-  function writefile(){
-    set fso = CreateObject("Scripting.FileSystemObject");
-    set s   = fso.CreateTextFile("<details.txt", True);
-
-    let firstname=document.getElementByname('fname');
-    let Surnam=document.getElementByname('sname');
-    let emel=document.getElementByname('email');
-    let mssage=document.getelementByname('message');
-    s.writeline=("First Name: " +firstname);
-    s.writeline=("Last Name: " +Surnam);
-    s.writeline=("Email: "+emel);
-    s.writefile=("Message:"+mssage);
-
-    s.writeline("-----------------------------");
-   s.Close();
-}
-
-  </script>
 
   <h1>We would Love To Connect, Give Us A Shout</h1>
 
@@ -83,4 +56,4 @@
     </div>
 
     </body>
-    </HTML>
+
