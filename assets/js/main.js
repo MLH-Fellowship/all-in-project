@@ -1,15 +1,20 @@
 /**function to toggle html of the like button */
 
-function likeFunction(){
-  var like = document.getElementById("likeBtn");
-  if(like.innerHTML == "Like"){
-    like.innerHTML="Dislike";
+function favoriteFunction(){
+  var like = document.getElementById("favBtn");
+  var counter = document.getElementById("favCount");
+  if(like.innerHTML == "fav"){
+    like.innerHTML="unfav";
+    counter.style.display = "inline";
 }else{
-    like.innerHTML = "Like"
+    like.innerHTML = "fav"
+    counter.style.display = "none";
+
   }
-  var element = document.getElementById("likeBtn");
-  element.classList.toggle("dislikeBtn");
 }
+
+/**function for saving favorites in local storage */
+
 
 /**function for contact form */
 function darkMode() {
