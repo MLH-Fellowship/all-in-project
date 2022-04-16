@@ -1,5 +1,5 @@
 /**function to toggle html of the like button */
-
+/**
 function favoriteFunction(){
   var like = document.getElementById("favBtn");
   var counter = document.getElementById("favCount");
@@ -7,6 +7,33 @@ function favoriteFunction(){
     like.innerHTML="unfav";
     counter.style.display = "inline";
 }else{
+    like.innerHTML = "fav"
+    counter.style.display = "none";
+
+  }
+}
+ */
+/**function to count favorites in blog posts */
+localStorage.setItem("favorites","0");
+
+function favoriteFunction(){
+  var like = document.getElementById("favBtn");
+  var counter = document.getElementById("favCount");
+
+  if(localStorage.favorites == "0"){
+    var favoriteCounter = localStorage.favorites;
+    favoriteCounter = parseInt(favoriteCounter) + 1;
+
+    localStorage.setItem("favorites", favoriteCounter);
+
+    like.innerHTML="unfav";
+    counter.style.display = "inline";
+    counter.innerHTML = localStorage.favorites;
+
+}else{
+    favoriteCounter = parseInt(favoriteCounter) - 1;
+    localStorage.setItem("favorites", favoriteCounter);
+
     like.innerHTML = "fav"
     counter.style.display = "none";
 
