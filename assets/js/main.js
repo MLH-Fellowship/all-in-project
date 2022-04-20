@@ -13,7 +13,7 @@ function favoriteFunction(){
   }
 }
  */
-/**function to count favorites in blog posts */
+/**function to count favorites in blog posts 
 localStorage.setItem("favorites","0");
 
 function favoriteFunction(){
@@ -38,10 +38,33 @@ function favoriteFunction(){
     counter.style.display = "none";
 
   }
-}
+}*/
 
 /**function for saving favorites in local storage */
+var bPostTitle = document.querySelector("h1").innerText;
+var bPostPage = window.location.href;
 
+function favoriteFunction(){
+  var bPostMeta = document.getElementById("postMeta").innerHTML;
+var bPostTitle = document.querySelector("h1").innerText;
+var bPostPage = window.location.href;
+  const bPost ={
+    meta: bPostMeta,
+    title: bPostTitle,
+    location: bPostPage,
+  }
+  window.localStorage.setItem("favorites", JSON.stringify(bPost));
+}
+/**function to retrieve favorite posts */
+function getFavorites(){
+  const favs = localStorage.getItem('favorites');
+    if (favs) {
+    return JSON.parse(favs);
+    var header = favs[1];
+      document.innerHTML.header;
+  }
+  return [];
+}
 
 /**function for contact form */
 function darkMode() {

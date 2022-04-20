@@ -1,12 +1,10 @@
 ---
 layout: page
-title: Posts by Kris
+title: Favorites
 ---
-{% for post in site.posts %}
-    {% if post.author == "Kris Mannino" %}
+<body onload="getFavorites()">
     <ul>
         <li><a id="postUrl" href="{{ post.url }}"> <p id="postTitle">{{ post.title }}</p></a> - {{post.author}}</li>
         
     </ul>
-    {% endif %}
-{% endfor %}
+</body>
